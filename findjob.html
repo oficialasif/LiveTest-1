@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dream Job</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"> <!-- Link to your external CSS file -->
+</head>
+<body>
+   <!-- Header Section -->
+   <header class="header">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="#">
+                <h3 style="font-weight: 700; color: #6A5ACD;">Dream Jobs</h3>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./findjob.html">Find Jobs</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Employers</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Admin</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
+                    <li class="nav-item"><a class="btn btn-primary" href="#">Contact Us</a></li>
+                    <li class="nav-item"><a class="btn btn-outline-primary" href="#">Login</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</header>
+
+    <!-- Main Content -->
+    <main class="container my-5">
+        <h2 style="color: #6A5ACD;" class="mb-4">Job Search</h2>
+        <p>Search for your desired job matching your skills</p>
+        <div class="search-bar mb-4 p-3 bg-light">
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <input type="text" class="form-control" placeholder="Enter Job title">
+                </div>
+                <div class="col-md-4 mb-3">
+                    <input type="text" class="form-control" placeholder="Enter location">
+                </div>
+                <div class="col-md-3 mb-3">
+                    <input type="text" class="form-control" placeholder="Years of experience">
+                </div>
+                <div class="col-md-1">
+                    <button style="background-color: #6A5ACD; color: #f5f5f5;" class="btn btn-primary w-100">Search</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <!-- Filter Section -->
+            <aside class="col-lg-3 mb-4">
+                <h5>Filter</h5>
+                <div class="bg-light p-3">
+                    <div class="mb-3">
+                        <h6>Salary Range</h6>
+                        <input  type="range" class="form-range">
+                    </div>
+                    <div class="mb-3">
+                        <h6>Job Type</h6>
+                        <ul class="list-unstyled">
+                            <li><input type="checkbox"> Full-time (267)</li>
+                            <li><input type="checkbox"> Part-time (42)</li>
+                            <li><input type="checkbox"> Remote (24)</li>
+                            <li><input type="checkbox"> Contract (38)</li>
+                        </ul>
+                    </div>
+                    <div class="mb-3">
+                        <h6>Work Mode</h6>
+                        <ul class="list-unstyled">
+                            <li><input type="checkbox"> Onsite (180)</li>
+                            <li><input type="checkbox"> Hybrid (90)</li>
+                            <li><input type="checkbox"> Remote (50)</li>
+                        </ul>
+                    </div>
+                    <div class="mb-3">
+                        <h6>Job Functions</h6>
+                        <ul class="list-unstyled">
+                            <li><input type="checkbox"> Engineering (98)</li>
+                            <li><input type="checkbox"> Marketing (43)</li>
+                            <li><input type="checkbox"> Design (34)</li>
+                            <li><input type="checkbox"> Customer Service (57)</li>
+                        </ul>
+                    </div>
+                    <div class="mb-3">
+                        <h6>Experience Level</h6>
+                        <ul class="list-unstyled">
+                            <li><input type="checkbox"> Entry (65)</li>
+                            <li><input type="checkbox"> Mid (120)</li>
+                            <li><input type="checkbox"> Senior (50)</li>
+                        </ul>
+                    </div>
+                    <button style="background-color: #6A5ACD; color: #f5f5f5;" class="btn btn-primary w-100">Expand all</button>
+                </div>
+            </aside>
+
+            <!-- Job Listings -->
+            <section class="col-lg-9">
+                <div class="d-flex justify-content-between align-items-center mb-4">
+                    <h5>All Jobs (2310)</h5>
+                    <select class="form-select w-auto">
+                        <option selected>Popular</option>
+                        <option>Newest</option>
+                        <option>Highest Salary</option>
+                    </select>
+                </div>
+
+                <div class="row g-3">
+                    <!-- Job Card 1 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card job-card">
+                            <div class="card-body">
+                                <h6 class="card-title">Technical Support Specialist</h6>
+                                <p class="text-muted small">Full-time • $40000 - $50000</p>
+                                <p class="text-muted small">Google Inc.</p>
+                                <div class="d-flex justify-content-between">
+                                    <button class="btn btn-outline-primary">View details</button>
+                                    <button class="btn btn-primary">Apply now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Job Card 2 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card job-card">
+                            <div class="card-body">
+                                <h6 class="card-title">Senior UI/UX Designer</h6>
+                                <p class="text-muted small">Full-time • $90000 - $120000</p>
+                                <p class="text-muted small">Apple Inc.</p>
+                                <div class="d-flex justify-content-between">
+                                    <button class="btn btn-outline-primary">View details</button>
+                                    <button class="btn btn-primary">Apply now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Job Card 3 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card job-card">
+                            <div class="card-body">
+                                <h6 class="card-title">Marketing Officer</h6>
+                                <p class="text-muted small">Full-time • $60000 - $75000</p>
+                                <p class="text-muted small">Intel Corp.</p>
+                                <div class="d-flex justify-content-between">
+                                    <button class="btn btn-outline-primary">View details</button>
+                                    <button class="btn btn-primary">Apply now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Additional job cards as needed -->
+                </div>
+                <div class="text-center mt-4">
+                    <a href="#" class="btn btn-link">View more</a>
+                </div>
+            </section>
+        </div>
+    </main>
+
+   <!-- Footer Section -->
+   <footer class="footer py-4">
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-md-3">
+                <h3 style="font-weight: 700; color: #6A5ACD;">Dream Jobs</h3>
+                <p>80 Charles Street West<br>Toronto, ON, Canada M5S 1K9</p>
+                <p>Email: info@alwaysapply.com<br>Phone: +1 987 876 8767</p>
+            </div>
+            <div class="col-md-2">
+                <h5 style="color: #6A5ACD;">Quick Link</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Find Jobs</a></li>
+                    <li><a href="#">Employers</a></li>
+                    <li><a href="#">Admin</a></li>
+                </ul>
+            </div>
+            <div class="col-md-2">
+                <h5 style="color: #6A5ACD;">Candidate</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#">Browse Jobs</a></li>
+                    <li><a href="#">Browse Categories</a></li>
+                    <li><a href="#">Candidate Dashboard</a></li>
+                    <li><a href="#">Saved Jobs</a></li>
+                </ul>
+            </div>
+            <div class="col-md-2">
+                <h5 style="color: #6A5ACD;">Employers</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#">Post a Job</a></li>
+                    <li><a href="#">Recruitment</a></li>
+                    <li><a href="#">Employer Dashboard</a></li>
+                    <li><a href="#">Applications</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <h5 style="color: #6A5ACD;">Top Companies</h5>
+                <div class="d-flex justify-content-between">
+                    <img src="google.png" alt="Google" width="60">
+                    <img src="microsoft.png" alt="Microsoft" width="60">
+                    <img src="flipkart.png" alt="Flipkart" width="60">
+                    <img src="youtube.png" alt="YouTube" width="60">
+                    <img src="ibm.png" alt="IBM" width="60">
+                </div>
+            </div>
+        </div>
+        <p class="mt-4">&copy; 2024 OficialAsif - All Rights Reserved</p>
+    </div>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
